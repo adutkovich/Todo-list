@@ -1,0 +1,104 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+    height: 100vh;
+    gap: 3em;
+    font-size: 1.3rem;
+    overflow: hidden;
+    box-shadow: -3px 1px 14px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: -3px 1px 14px 0px rgba(0,0,0,0.71);
+    -moz-box-shadow: -3px 1px 14px 0px rgba(0,0,0,0.71);
+}
+.main{
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+}
+
+button{
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: white;
+    border-style: none;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: rgba(65, 147, 229, 0.2);
+}
+
+.sidebar .createItem{
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
+.createItem:hover{
+    background-color: rgba(34, 188, 34, 0.532);
+}
+
+.newItemModal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton{
+    margin-top: 1rem;
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+.submitButton:hover{
+    background-color:  rgba(34, 188, 34, 0.532);
+}
+.itemLine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: 1px solid black;
+    overflow: hidden;
+}
